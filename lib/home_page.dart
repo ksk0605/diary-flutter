@@ -20,6 +20,13 @@ class _HomePageState extends State<HomePage> {
     return Consumer<DiaryService>(
       builder: (context, diaryService, child) {
         return Scaffold(
+          floatingActionButton: FloatingActionButton(
+            onPressed: () {
+              // Add your onPressed code here!
+            },
+            child: Icon(Icons.create),
+            backgroundColor: Colors.indigo,
+          ),
           body: SafeArea(
             child: Column(
               children: [
